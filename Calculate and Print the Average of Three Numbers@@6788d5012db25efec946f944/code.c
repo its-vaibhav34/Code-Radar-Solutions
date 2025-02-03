@@ -2,10 +2,10 @@
 
 
 int main() {
-    float num1,num2,num3;
-    scanf("%f",&num1);
-    scanf("%f",&num2);
-    scnaf("%f",&num3);
-    printf("Average: %.2f",(num1+num2+num3)/3);
+    float a,b,c;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scnaf("%f",&c);
+    printf("Average: %.2f",(a+b+c)/3);
     return 0;
 }
