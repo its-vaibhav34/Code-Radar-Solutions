@@ -2,9 +2,9 @@
 
 
 int main() {
-    int num1;
-    int num2;
-    int num3;
+    float num1;
+    float num2;
+    float num3;
     scanf("%f",&num1);
     scanf("%f",&num2);
     scnaf("%f",&num3);
