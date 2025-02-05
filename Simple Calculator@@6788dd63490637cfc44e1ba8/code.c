@@ -4,7 +4,11 @@ int main() {
     int a, b;
     char c;
     
-   scanf("%d""%d""%c",&a,&b,&c);
+    // Corrected scanf to properly handle the operator
+    if (scanf("%d %d %c", &a, &b, &c) != 3) {
+        printf("Invalid input\n");
+        return 1;
+    }
     
     int r; // result variable
     switch (c) {
