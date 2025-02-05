@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &month);
 
     if (month < 1 || month > 12) {
-        printf("Invalid month number\n");
+        printf("Invalid month");
         return 1;
     }
 
