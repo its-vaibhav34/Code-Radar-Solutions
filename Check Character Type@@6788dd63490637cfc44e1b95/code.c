@@ -2,16 +2,21 @@
 
 int main() {
     char chr;
-    scanf("%c",&chr);
-    if(chr== 'a' ||'e'||'i'||'o'||'u'){
+    scanf("%c", &chr);
+
+    // Correct vowel check
+    if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u' ||
+        chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') {
         printf("Vowel");
     }
-    else if(chr> 'a' &&chr<='z'){
+    // Check for consonants
+    else if ((chr >= 'a' && chr <= 'z') || (chr >= 'A' && chr <= 'Z')) {
         printf("Consonant");
     }
-    else{
+    // Any other character is a special character
+    else {
         printf("Special Character");
     }
-   
+
     return 0;
 }
