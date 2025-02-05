@@ -4,17 +4,20 @@ int main() {
     char chr;
     scanf("%c", &chr);
 
-    if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u') {
+
+    if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u' ||
+        chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') {
         printf("Vowel");
     }
-    
-    else if (chr >= 'a' && chr <= 'z') {
+    // Check if it's a consonant (a-z, A-Z but not vowels)
+    else if ((chr >= 'a' && chr <= 'z') || (chr >= 'A' && chr <= 'Z')) {
         printf("Consonant");
     }
+    // Check if it's a digit (0-9)
     else if (chr >= '0' && chr <= '9') {
         printf("Digit");
     }
-    
+    // If it's neither, it's a special character
     else {
         printf("Special Character");
     }
