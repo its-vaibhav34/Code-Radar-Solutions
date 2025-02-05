@@ -2,17 +2,12 @@
 
 int main() {
     char ch;
-    
-    // Read a single character from input
-    if (scanf(" %c", &ch) != 1) {
-        printf("Not an alphabet\n");
-        return 0;
-    }
+    scanf("%c", &ch);  // Read a single character
 
     if (ch >= 'A' && ch <= 'Z') {
-        printf("Uppercase\n");
+        printf("Uppercase");
     } else if (ch >= 'a' && ch <= 'z') {
-        printf("Lowercase\n");
+        printf("Lowercase");
     } else {
         printf("Not an alphabet\n");
     }
