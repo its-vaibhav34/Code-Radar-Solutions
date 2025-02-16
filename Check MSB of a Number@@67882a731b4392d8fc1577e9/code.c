@@ -5,7 +5,7 @@ int main() {
     int a;
     scanf("%d", &a);
     
-    if (a & 0x80000000) {  // Check if the MSB is set
+    if (a & 80000000) {  // Check if the MSB is set
         printf("Set");
     } else {
         printf("Not Set");
