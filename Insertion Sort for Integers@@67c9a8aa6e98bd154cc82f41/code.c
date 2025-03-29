@@ -11,6 +11,9 @@ void insertionSort(int arr[], int n){
         }
     }
 }
-void printArray(int arr[],int n){
-    printf("%d ",arr[i]);
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);  // Added space for better readability
+    }
+    printf("\n");
 }
