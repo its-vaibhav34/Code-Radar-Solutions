@@ -1,22 +1,24 @@
 // Your code here...
-void selectionSort(char arr[], int n) {
-   
-
+void selectionSort(char arr[][100], int n) {
     for (int i = 0; i < n - 1; i++) {
         int min = i;
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[min]) {  // Lexicographically smallest character find karna
+            // Compare strings lexicographically using strcmp
+            if (strcmp(arr[j], arr[min]) < 0) {
                 min = j;
             }
         }
-        // Swap smallest character with current character
-        char temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        // Swap strings
+        char temp[100];
+        strcpy(temp, arr[i]);
+        strcpy(arr[i], arr[min]);
+        strcpy(arr[min], temp);
     }
 }
 
 // Print Function
-void printString(char arr[],int n) {
-    printf("%s\n", arr);  // String ko directly print kar sakte hain
+void printString(char arr[][100], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%s\n", arr[i]);  // Print each string on a new line
+    }
 }
