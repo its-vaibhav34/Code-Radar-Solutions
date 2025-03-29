@@ -1,17 +1,24 @@
 // Your code here...
 int isPrime(int num) {
-    if (num < 2) return 0;  // 0 and 1 are not prime
+    if (num < 2) return 0;  
     for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) return 0;  // If divisible, not prime
+        if (num % i == 0) return 0;  
     }
-    return 1;  // Prime number
+    return 1;  
 }
 
-// Function to print prime numbers in range [L, R]
+
 void printPrimesInRange(int L, int R) {
+    int primeFound = 0; 
+    
     for (int i = L; i <= R; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
+            primeFound = 1; 
         }
+    }
+    
+    if (!primeFound) {
+        printf("No prime numbers");
     }
 }
