@@ -1,5 +1,5 @@
 // Your code here...
-void kthSmallest(int arr,int n,int k){
+void kthSmallest(int arr[],int n,int k){
     for(int i=0;i<n-i;i++){
         for(int j=0; j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
