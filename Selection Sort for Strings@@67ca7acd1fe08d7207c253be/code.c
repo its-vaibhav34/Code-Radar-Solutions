@@ -1,5 +1,5 @@
 // Your code here...
-void selectionSort(char arr[]) {
+void selectionSort(char arr[], int n) {
     int n = strlen(arr);  // String ki length nikalna
 
     for (int i = 0; i < n - 1; i++) {
@@ -17,6 +17,6 @@ void selectionSort(char arr[]) {
 }
 
 // Print Function
-void printString(char arr[]) {
+void printString(char arr[],int n) {
     printf("%s\n", arr);  // String ko directly print kar sakte hain
 }
