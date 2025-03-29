@@ -1,5 +1,5 @@
 // Your code here...
-void kthSmallest(int arr[],int n,int k){
+void sort(int arr[],int n,int k){
     for(int i=0;i<n-i;i++){
         for(int j=0; j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
@@ -12,6 +12,6 @@ void kthSmallest(int arr[],int n,int k){
 }
 
 int kthSmallest(int arr[],int n, int k){
-    kthSmallest(arr,n);
+    sort(arr,n);
     return arr[k-1];
 }
