@@ -8,7 +8,7 @@ int isPrime(int num) {
 }
 
 // Function to print prime numbers in range [L, R]
-void printPrimes(int L, int R) {
+void printPrimesInRange(int L, int R) {
     for (int i = L; i <= R; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
