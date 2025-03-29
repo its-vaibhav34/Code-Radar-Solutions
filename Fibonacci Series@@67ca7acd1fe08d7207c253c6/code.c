@@ -1,4 +1,7 @@
 void fibonacciSeries(int n){
       if (n <= 1) return n;  
-    return fibonacci(n - 1) + fibonacci(n - 2);  
+      for (int i = 0; i < n; i++) {
+        return fibonacciSeries(n - 1) + fibonacciSeries(n - 2);  
+    }
+    
 }
