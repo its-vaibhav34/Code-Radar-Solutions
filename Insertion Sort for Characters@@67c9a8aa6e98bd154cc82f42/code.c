@@ -9,7 +9,7 @@ void insertionSort(char arr[],int n){
         }
         char temp = arr[i];
         arr[i]= arr[max];
-        arr[max]=arr[i];
+        arr[max]=temp;
     }
 }
 void printArray(char arr[],int n){
